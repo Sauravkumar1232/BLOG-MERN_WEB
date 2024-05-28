@@ -17,7 +17,7 @@ const Navbar = () => {
 
   // const isDashboard = useLocation("http://localhost:5173/dashboard");
   const isDashboard = useLocation(
-    "http://meek-kitten-c8267a.netlify.app/dashboard"
+    "https://meek-kitten-c8267a.netlify.app/dashboard"
   );
 
   const { mode, setMode, isAuthenticated, user, setIsAuthenticated } =
