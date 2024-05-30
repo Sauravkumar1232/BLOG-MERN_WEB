@@ -3,11 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { AiFillInstagram, AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
 import { FaGitSquare } from "react-icons/fa";
 import { Context } from "../../main";
+import { BASE_URL } from "../../helper";
 
 const Footer = () => {
   // const isDashboard = useLocation("http://localhost:5173/dashboard");
   const isDashboard = useLocation(
-    "https://meek-kitten-c8267a.netlify.app/dashboard"
+  `${BASE_URL}/dashboard`
   );
 
   const { mode, setMode } = useContext(Context);
