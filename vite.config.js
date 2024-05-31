@@ -17,13 +17,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'https://blog-mern-api-tck7.onrender.com',
-        changeOrigin: true,
-        secure: false,
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://blog-mern-api-tck7.onrender.com',
+    //     changeOrigin: true,
+    //     secure: false,
+    //   },
+    // },
   },
 });
 
