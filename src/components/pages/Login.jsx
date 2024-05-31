@@ -20,6 +20,7 @@ const Login = () => {
         `${BASE_URL}/api/user/login`,
         { email, password, role },
         {
+          credentials: 'include',
           withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
