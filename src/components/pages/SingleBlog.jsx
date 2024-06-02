@@ -3,6 +3,7 @@ import { Context } from "../../main";
 import { Navigate, useParams } from "react-router-dom";
 import axios from "axios";
 import StarRating from "../miniComponents/StarRating";
+import { BASE_URL } from "../../helper";
 
 const SingleBlog = () => {
   const { mode, user, isAuthenticated } = useContext(Context);
