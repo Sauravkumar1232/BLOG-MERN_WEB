@@ -4,6 +4,7 @@ export default defineConfig({
   plugins: [reactRefresh()],
   // Base URL for assets in production
   base: '/',
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   // Resolve paths configuration
   resolve: {
     alias: {
