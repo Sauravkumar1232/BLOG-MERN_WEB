@@ -60,6 +60,12 @@ const SideBar = ({ setComponent }) => {
           <button onClick={() => handleComponent("My Profile")}>
             MY PROFILE
           </button>
+          {user.role === "Author" ? (
+            <button onClick={gotoHome}>User </button>
+          ) : (
+            <button onClick={gotoHome}>User Not </button>
+          )}
+
           <button onClick={gotoHome}>HOME</button>
           <button onClick={handleLogout}>LOGOUT</button>
           <button

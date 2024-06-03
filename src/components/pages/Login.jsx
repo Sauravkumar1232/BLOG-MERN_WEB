@@ -20,16 +20,20 @@ const Login = () => {
         `${BASE_URL}/api/user/login`,
         { email, password, role },
         {
+          credentials: "include",
           withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
       )
       .then((res) => {
-        toast.success(res.data.message);
+        setTimeout(function () {
+          toast.success(res.data.message);
+        }, 5);
         setEmail("");
         setPassword("");
         setRole("");
         navigateTo("/");
+
         window.location.reload();
       })
       .catch((error) => {
@@ -51,6 +55,7 @@ const Login = () => {
               <option value="">SELECT ROLE</option>
               <option value="Reader">READER</option>
               <option value="Author">AUTHOR</option>
+              <option value="Admin">Admin</option>
             </select>
           </div>
           <div>

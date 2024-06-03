@@ -14,8 +14,13 @@ const Dashboard = () => {
   if (!isAuthenticated) {
     return <Navigate to={"/"} />;
   }
-  if (user.role === "Reader") {
+  if (user.role === "reader") {
     return <Navigate to={"/"} />;
+  }
+  if (user.role === "author") {
+    console.log(user.role);
+
+    // return <Navigate to={"/"} />;
   }
 
   return (

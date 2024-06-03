@@ -4,7 +4,10 @@ import react from "@vitejs/plugin-react-swc";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/BLOG-MERN_WEB",
+  // server: {
+  //   port: process.env.PORT || 3000,
+  // },
+  // base: "/BLOG-MERN_WEB",
   build: {
     outDir: "dist",
   },
