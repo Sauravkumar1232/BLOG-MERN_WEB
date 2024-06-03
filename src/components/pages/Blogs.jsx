@@ -75,6 +75,7 @@ const Blogs = () => {
           <option value="">Select Category</option>
           <option value="Lifestyle">Lifestyle</option>
           <option value="Technology">Technology</option>
+          <option value="Social">Social</option>
           <option value="Sports">Sports</option>
           <option value="Travel">Travel</option>
           <option value="Business">Business</option>

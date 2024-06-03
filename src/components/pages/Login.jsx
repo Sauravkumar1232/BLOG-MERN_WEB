@@ -26,17 +26,13 @@ const Login = () => {
         }
       )
       .then((res) => {
-        setTimeout(function () {
-          toast.success(res.data.message);
-        }, 5);
         setEmail("");
         setPassword("");
         setRole("");
         navigateTo("/");
 
-        window.location.reload();
-
-        // window.location.reload();
+        toast.success(res.data.message);
+        setTimeout(() => window.location.reload(), 1500);
       })
       .catch((error) => {
         toast.error(error.response.data.message);
