@@ -20,7 +20,7 @@ const Login = () => {
         `${BASE_URL}/api/user/login`,
         { email, password, role },
         {
-          credentials: 'include',
+          credentials: "include",
           withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
@@ -31,6 +31,11 @@ const Login = () => {
         setPassword("");
         setRole("");
         navigateTo("/");
+
+        setTimeout(function () {
+          window.location.reload();
+        }, 1);
+
         // window.location.reload();
       })
       .catch((error) => {
