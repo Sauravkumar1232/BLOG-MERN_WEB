@@ -1254,6 +1254,7 @@ footer .container:last-child .links a svg {
   color: #fff;
   font-weight: 700;
   border-radius: 8px;
+  cursor: pointer;
 }
 .create-blog form .create-btn:hover {
   transition: 0.3s;
@@ -1407,6 +1408,7 @@ footer .container:last-child .links a svg {
   border: none;
   border-radius: 8px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .auth-form form .submit-btn:hover {
   transition: 0.3s;

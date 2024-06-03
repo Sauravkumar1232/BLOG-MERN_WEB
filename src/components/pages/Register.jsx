@@ -15,6 +15,7 @@ const Register = () => {
   const [education, setEducation] = useState("");
   const [avatar, setAvatar] = useState("");
   const [avatarPreview, setAvatarPreview] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const changeAvatarHandler = (e) => {
     const file = e.target.files[0];
@@ -31,6 +32,7 @@ const Register = () => {
   const navigateTo = useNavigate();
 
   const handleRegister = async (e) => {
+    setLoading(true);
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", name);
@@ -66,6 +68,8 @@ const Register = () => {
       window.location.reload();
     } catch (error) {
       toast.error(error.response.data.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -121,11 +125,11 @@ const Register = () => {
             onChange={(e) => setEducation(e.target.value)}
           >
             <option value="">SELECT YOUR EDUCATION</option>
-            <option value="Matric">Matric</option>
+            <option value="Matric">Matriculation</option>
             <option value="Intermediate">Intermediate</option>
-            <option value="Graducation">Graducation</option>
+            <option value="Graducation">Graduation</option>
             <option value="Masters">Masters</option>
-            <option value="PhD">PhD</option>
+            <option value="PhD">Ph.D</option>
           </select>
           <div
             style={{
@@ -150,8 +154,9 @@ const Register = () => {
           <p>
             Already Registered? <Link to={"/login"}>Login Now</Link>
           </p>
-          <button className="submit-btn" type="submit">
-            REGISTER
+          <button className="submit-btn" type="submit" disabled={loading}>
+            {loading ? "Registering..." : "Register"}
+            {/* REGISTER */}
           </button>
         </form>
       </section>
