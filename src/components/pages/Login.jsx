@@ -34,7 +34,7 @@ const Login = () => {
 
         setTimeout(function () {
           window.location.reload();
-        }, 2);
+        }, 5);
 
         // window.location.reload();
       })
