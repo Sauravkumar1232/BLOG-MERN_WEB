@@ -26,15 +26,15 @@ const Login = () => {
         }
       )
       .then((res) => {
-        toast.success(res.data.message);
+        setTimeout(function () {
+          toast.success(res.data.message);
+        }, 5);
         setEmail("");
         setPassword("");
         setRole("");
         navigateTo("/");
 
-        setTimeout(function () {
-          window.location.reload();
-        }, 5);
+        window.location.reload();
 
         // window.location.reload();
       })
