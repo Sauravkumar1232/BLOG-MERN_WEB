@@ -6,11 +6,7 @@ export default defineConfig({
   base: '/',
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   // Resolve paths configuration
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
+  
 });
 
 
