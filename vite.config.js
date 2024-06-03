@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [react()],
   // Base URL for assets in production
   base: '/',
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
