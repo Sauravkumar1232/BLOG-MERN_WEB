@@ -7,9 +7,6 @@ import { BASE_URL } from "../../helper";
 
 const Footer = () => {
   // const isDashboard = useLocation("http://localhost:5173/dashboard");
-  // const isDashboard = useLocation(
-  //   "https://meek-kitten-c8267a.netlify.app/dashboard"
-  // );
   const isDashboard = useLocation(`${BASE_URL}/dashboard`);
 
   const { mode, setMode } = useContext(Context);

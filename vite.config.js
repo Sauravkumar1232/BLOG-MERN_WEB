@@ -1,14 +1,36 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import reactRefresh from "@vitejs/plugin-react-refresh";
+export default defineConfig({
+  plugins: [reactRefresh()],
+  // Base URL for assets in production
+
+  rewrites: [{ source: "/(.*)", destination: "/index.html" }],
+
+  // Resolve paths configuration
+});
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  // server: {
-  //   port: process.env.PORT || 3000,
-  // },
-  // base: "/BLOG-MERN_WEB",
-  build: {
-    outDir: "dist",
-  },
-});
+// export default defineConfig({
+//   plugins: [react()],
+
+//   build: {
+//     outDir: "dist",
+//   },
+// });
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react-swc";
+
+// export default defineConfig({
+//   plugins: [react()],
+//   server: {
+//     port: 3000,
+//     // proxy: {
+//     //   '/api': {
+//     //     target: 'https://blog-mern-api-tck7.onrender.com',
+//     //     changeOrigin: true,
+//     //     secure: false,
+//     //   },
+//     // },
+//   },
+// });
