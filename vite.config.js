@@ -1,20 +1,17 @@
 import { defineConfig } from "vite";
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import reactRefresh from "@vitejs/plugin-react-refresh";
 export default defineConfig({
- plugins: [reactRefresh()]
+  plugins: [reactRefresh()],
   // Base URL for assets in production
-  
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+
+  rewrites: [{ source: "/(.*)", destination: "/" }],
   // Resolve paths configuration
-  
 });
-
-
 
 // https://vitejs.dev/config/
 // export default defineConfig({
 //   plugins: [react()],
- 
+
 //   build: {
 //     outDir: "dist",
 //   },
@@ -36,4 +33,3 @@ export default defineConfig({
 //     // },
 //   },
 // });
-
