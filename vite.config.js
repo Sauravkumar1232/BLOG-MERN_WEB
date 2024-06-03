@@ -4,7 +4,8 @@ export default defineConfig({
   plugins: [reactRefresh()],
   // Base URL for assets in production
 
-  rewrites: [{ source: "/(.*)", destination: "/" }],
+  rewrites: [{ source: "/(.*)", destination: "/index.html" }],
+
   // Resolve paths configuration
 });
 
