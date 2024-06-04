@@ -1640,6 +1640,7 @@ footer .container:last-child .links a svg {
   color: #000;
   font-weight: 700;
   border-radius: 8px;
+   cursor: pointer;
 }
 .update-blog form .update-btn:hover {
   transition: 0.3s;
