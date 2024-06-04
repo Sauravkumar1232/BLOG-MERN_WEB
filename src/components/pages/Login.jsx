@@ -53,7 +53,7 @@ const Login = () => {
               <option value="">SELECT ROLE</option>
               <option value="Reader">READER</option>
               <option value="Author">AUTHOR</option>
-              <option value="Admin">Admin</option>
+{/*               <option value="Admin">Admin</option> */}
             </select>
           </div>
           <div>
