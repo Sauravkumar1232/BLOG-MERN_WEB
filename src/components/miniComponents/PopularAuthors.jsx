@@ -12,7 +12,7 @@ const PopularAuthors = () => {
           `${BASE_URL}/api/user/getPopularAuthors`,
         { withCredentials: true }
       );
-      setAuthors(data.authors);
+      setAuthors(data.popularAuthors);
     };
     fetchAuthors();
   }, []);
