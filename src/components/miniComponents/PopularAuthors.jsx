@@ -9,7 +9,7 @@ const PopularAuthors = () => {
     const fetchAuthors = async () => {
       const { data } = await axios.get(
         // "http://localhost:3000/api/user/getAuthors",
-        `${BASE_URL}/api/user/getAuthors`,
+          `${BASE_URL}/api/user/getPopularAuthors`,
         { withCredentials: true }
       );
       setAuthors(data.authors);
