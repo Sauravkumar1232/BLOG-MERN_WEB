@@ -56,7 +56,7 @@ const Footer = () => {
             <li>Economy</li>
           </ul>
         </div>
-        <div className="news_letter">
+{/*         <div className="news_letter">
           <div>
             <h3>Weekly Newletter</h3>
             <p>Get blog articles and offer via email</p>
@@ -65,7 +65,7 @@ const Footer = () => {
             <input type="text" placeholder={`Your Email`} />
             <button>Subscribe</button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="container">
         <div className="logo">
