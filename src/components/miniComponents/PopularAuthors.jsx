@@ -24,9 +24,9 @@ const PopularAuthors = () => {
           authors.slice(0, 4).map((element) => {
             return (
               <div className="card" key={element._id}>
-                <img src={element.avatar.url} alt="author" />
-                <p>{element.name}</p>
-                <p>{element.role}</p>
+                <img src={element.author.avatar.url} alt="author" />
+                <p>{element.author.name}</p>
+                <p>{element.author.role}</p>
               </div>
             );
           })
