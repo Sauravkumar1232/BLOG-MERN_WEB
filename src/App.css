@@ -728,6 +728,16 @@ footer .container {
   gap: 20px;
   position: relative;
 }
+footer .container .list{
+  display: grid;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+/* footer .container .list li{
+  flex-basis: calc(50% - 10px); /* Two columns, subtracting margin */
+  /* margin: 5px; Adjust as needed for spacing */
+/* }  */
+
 footer .container:first-child::before {
   content: "";
   position: absolute;

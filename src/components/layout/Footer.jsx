@@ -7,9 +7,7 @@ import { BASE_URL } from "../../helper";
 
 const Footer = () => {
   // const isDashboard = useLocation("http://localhost:5173/dashboard");
-  const isDashboard = useLocation(
-  `${BASE_URL}/dashboard`
-  );
+  const isDashboard = useLocation(`${BASE_URL}/dashboard`);
 
   const { mode, setMode } = useContext(Context);
 
@@ -49,16 +47,19 @@ const Footer = () => {
         </div>
         <div className="categories">
           <h3>Categories</h3>
-          <ul>
-            <li>Lifestyle</li>
-            <li>Technology</li>
-            <li>Sports</li>
-            <li>Travel</li>
-            <li>Business</li>
-            <li>Economy</li>
-          </ul>
+          <div className="list">
+            <ul>
+              <li>Lifestyle</li>
+              <li>Technology</li>
+              <li>Social</li>
+              <li>Sports</li>
+              <li>Travel</li>
+              <li>Business</li>
+              <li>Economy</li>
+            </ul>
+          </div>
         </div>
-        <div className="news_letter">
+        {/* <div className="news_letter">
           <div>
             <h3>Weekly Newletter</h3>
             <p>Get blog articles and offer via email</p>
@@ -67,7 +68,7 @@ const Footer = () => {
             <input type="text" placeholder={`Your Email`} />
             <button>Subscribe</button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="container">
         <div className="logo">
